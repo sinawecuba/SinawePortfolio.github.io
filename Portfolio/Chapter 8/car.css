@@ -1,0 +1,32 @@
+#car {
+    font-family: Arial;
+   }
+   #body {
+    position: absolute;
+    top: 28px;
+    width: 90%;
+    height: 115px;
+    background-color: #000000;
+    border: 12px dashed rgb(232, 83, 14);
+    text-align: center;
+   }
+   #backwheel {
+    position: absolute;
+    left: 10%;
+    top: 160px;
+    background-color: #f106f1;
+    border: 10px dotted rgb(217, 216, 216);
+    border-radius: 60%;
+    width: 40px;
+    height: 40px;
+   }
+   #frontwheel {
+    position: absolute;
+    left: 55%;
+    top: 160px;
+    background-color: #efe308;
+    border: 10px double rgb(7, 7, 7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+   }

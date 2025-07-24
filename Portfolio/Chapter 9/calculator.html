@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='calculator.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+      <div id="calculator"> <!-- Main calculator container -->
+
+    <header>
+        <h1>JS Super-Calculator</h1> <!-- Main title -->
+        <p>The super-calculator shows the result of using different operators</p> <!-- Description -->
+    </header>
+
+    <div class="input-area"> <!-- First operand input area -->
+        <h2>Step 1: Enter the 1st Operand</h2>
+        <input type="text" id="operand1" value="1" /> <!-- Text input for operand 1 -->
+        <select id="operand1-type"> <!-- Choose type: number or string -->
+            <option value="number">number</option>
+            <option value="string">string</option>
+        </select>
+    </div>
+    
+    <div class="input-area"> <!-- Operator selection area -->
+        <h2>Step 2: Choose an Operator</h2>
+        <div class="operator-choices">
+
+            <h3>Arithmetic Operators</h3> <!-- Math operators -->
+            <input type="radio" name="operator" value="+" checked>+&nbsp;
+            <input type="radio" name="operator" value="-">-&nbsp;
+            <input type="radio" name="operator" value="*">*&nbsp;
+            <input type="radio" name="operator" value="/">/&nbsp;
+            <input type="radio" name="operator" value="%">%&nbsp;
+
+            <h3>String Operator</h3> <!-- String concatenation -->
+            <input type="radio" name="operator" value="concat">+ (concatenation)&nbsp;
+
+            <h3>Comparison Operators</h3> <!-- Boolean comparisons -->
+            <input type="radio" name="operator" value="==">==&nbsp;
+            <input type="radio" name="operator" value="===">===&nbsp;
+            <input type="radio" name="operator" value="!=">!=&nbsp;
+            <input type="radio" name="operator" value="!==">!==&nbsp;
+            <input type="radio" name="operator" value=">">&gt;&nbsp;
+            <input type="radio" name="operator" value=">=">&gt;=&nbsp;
+            <input type="radio" name="operator" value="<">&lt;&nbsp;
+            <input type="radio" name="operator" value="<=">&lt;=&nbsp;
+        </div>
+    </div>
+            
+    <div class="input-area"> <!-- Second operand input area -->
+        <h2>Step 3: Enter the 2nd Operand</h2>
+        <input type="text" id="operand2" value="1"> <!-- Text input for operand 2 -->
+        <select id="operand2-type"> <!-- Choose type: number or string -->
+            <option value="number">number</option>
+            <option value="string">string</option>
+        </select>
+    </div>
+    
+    <div class="input-area"> <!-- Submit button area -->
+        <h2>Step 4: Click the Button</h2>
+        <input type="submit" id="submit" value="Operate!"> <!-- Trigger the operation -->
+    </div>
+
+    <hr>
+
+    <div class="output-area"> <!-- Result display area -->
+        <h2>Output</h2>
+
+        <h3>Operation</h3>
+        <span id="final-operation">???</span> <!-- Displays the full operation performed -->
+
+        <h3>Return Value:</h3>
+        <span id="result">???</span> <!-- Displays the result -->
+    </div>
+</div>
+
+      <script src='caculator.js'></script>
+</body>
+</html>
